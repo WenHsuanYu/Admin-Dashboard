@@ -139,3 +139,142 @@
     border:none;
     border-radius: 15px;
 }
+
+/* main */
+
+.main {
+    background-color: #e2e8f0;
+    grid-column: 2/3;
+    grid-row:2/3;
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 30px 20px 50px 20px;
+    max-height:100%;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.project-display {
+    grid-column:1/2;
+    grid-row:1/3;
+    margin-right:25px;
+}
+
+.project-container {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.project {
+    background-color: white;
+    width:100%;
+    height:180px;
+    border-radius: 5px;
+    padding:10px;
+    background-image: linear-gradient(to right, orange 0% 2%, white 2% 100%);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    box-shadow: 0px 2px 3px rgb(175, 175, 175);
+}
+
+.project-content {
+    padding:10px;
+    font-size:13px;
+}
+
+.project-heading {
+    font-weight:600;
+    font-size:16px;
+    /* align-content: end; */
+}
+
+.project-interact-container {
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.interactions {
+    display:flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    gap:5px;
+}
+
+.announcements {
+    grid-column: 2/3;
+    grid-row:1/2;
+    padding-bottom: 10px;
+}
+
+.common-heading {
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.announcements-container {
+    background-color: white;
+    box-shadow: 0px 2px 3px rgb(175, 175, 175);
+    padding: 20px 20px 20px 25px;
+    border-radius: 5px;
+    min-width: 230px;
+}
+
+.announcement-header {
+    font-weight:600;
+    font-size:13px;
+    margin-bottom: 4px;
+    padding-top:10px;
+}
+
+.announcement-description{
+    font-size:11px;
+    color:#606060;
+    margin-bottom:20px;
+}
+
+.trending {
+    grid-column:2/3;
+    grid-row:2/3;
+}
+
+.trending-container {
+    background-color: white;
+    box-shadow: 0px 2px 3px rgb(175, 175, 175);
+    padding: 20px 20px 20px 25px;
+    border-radius: 5px;
+    min-width: 230px;
+}
+
+.trending-profile {
+    display:flex;
+    align-items: center;
+    padding-bottom:15px;
+}
+
+.trending-profile img {
+    margin-right: 10px;
+}
+
+.username {
+    font-size:12px;
+    font-weight:600;
+    color:black;
+}
+
+.project-name {
+    font-size: 12px;
+    color:#363636;
+    width:100%;
+}
